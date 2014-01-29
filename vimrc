@@ -134,6 +134,28 @@ syntax on
 call pathogen#infect()
 
 " ============================================================================
+" " Javascript Setup
+" "
+" ============================================================================
+"cd ~/.vim/bundle
+"git clone https://github.com/pangloss/vim-javascript.git
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+let javascript_enable_domhtmlcss=0
+let b:javascript_fold=1
+
+" ============================================================================
+" " Javascript Syntax Checker Setup
+" " Jslint
+" ============================================================================
+"cd ~/.vim/bundle
+"https://github.com/scrooloose/syntastic
+"
+let g:syntastic_javascript_checkers = ['jslint']
+
+
+" ============================================================================
 " " Python IDE Setup
 " "
 " ============================================================================
@@ -192,4 +214,4 @@ set nofoldenable
 "------------------------------
 "SimpleNote cretentials file
 "-----------------------------
-source ~/.simplenoterc
+"source ~/.simplenoterc
